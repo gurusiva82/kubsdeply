@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    dockerimagename = "siva1008/marriage:1.1"
+    dockerimagename = "siva1008/marriage:latest"
     dockerImage = ""
   }
 
@@ -30,7 +30,7 @@ pipeline {
       steps{
         script {
           docker.withRegistry( 'https://registry.hub.docker.com', registryCredential ) {
-            dockerImage.push("1.1")
+            dockerImage.push("latest")
           }
         }
       }
