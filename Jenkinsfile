@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    dockerimagename = "siva1008/marriage:latest"
+    dockerimagename = "siva1008/marriage"
     dockerImage = ""
   }
 
